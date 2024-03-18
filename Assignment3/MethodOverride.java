@@ -13,7 +13,7 @@ class Dog extends Animal {
         System.out.println("Dog barks");
     }
 
-    // Method overloading
+   
     void makeSound(String sound) {
         System.out.println("Dog makes " + sound);
     }
@@ -22,13 +22,12 @@ class Dog extends Animal {
 public class MethodOverride {
     public static void main(String[] args) {
         Animal animal = new Animal();
-        animal.makeSound(); // Output: Animal makes a sound
+        animal.makeSound(); 
 
         Dog dog = new Dog();
-        dog.makeSound(); // Output: Dog barks
+        dog.makeSound(); 
 
-        // Method overloading demonstration
-        dog.makeSound("woof"); // Output: Dog makes woof
+        dog.makeSound("woof"); 
     }
 }
 
