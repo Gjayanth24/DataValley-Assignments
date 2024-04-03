@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="sign-up-form">
+        <h1>Sign Up</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <br/>
+                <input type="text" id="name" name="name" placeholder="Full name" required />
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <br/>
+                <input type="email" id="email" name="email" placeholder="gmail id" required />
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <br/>
+                <input type="password" id="password" name="password" placeholder="8 characters" required />
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <br/>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="8 characters"
+                    required />
+            </div>
+
+            <div class="form-group">
+                <label for="date-of-birth">Date Of Birth:</label>
+                <br/>
+                <input type="date" id="date-of-birth" name="date-of-birth" placeholder="dd/mm/yyyy" required />
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <div class="gender-options">
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male" />
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="female" />
+                    <label for="other">Other</label>
+                    <input type="radio" id="other" name="gender" value="other" />
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label for="photo">Insert your photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" />
+            </div>
+
+            <div class="form-group">
+                <label for="resume">Insert your resume:</label>
+                <input type="file" id="resume" name="resume" accept=".doc,.docx,.pdf" />
+            </div>
+            
+            <div class="form-group">
+                <label for="security-question">Security Question:</label>
+                <br/>
+                <select id="security-question" name="security-question">
+                    <option value="">Select</option>
+                    <option value="question1">Your mother's maiden name?</option>
+                    <option value="question2">Your favorite childhood pet?</option>
+                    <option value="question3">Your favorite city?</option>
+                </select>
+            </div>
+
+            <div class="form-group checkbox">
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required /> I agree
+                    terms and conditions
+                </label>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+        <a href="#"><button>RESET</button></a>
+
+    </div>
+
+</body>
+</html>
